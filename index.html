@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera Surveillance Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>📹 Camera Surveillance Demo</h1>
+      <div class="system-status">System: <span id="systemStatus" class="ok">ONLINE</span></div>
+    </header>
+
+    <main class="layout">
+      <section class="feeds">
+        <article class="panel">
+          <div class="panel-header">
+            <h2>CAM-01 · Cat Lounge</h2>
+            <span id="motionCam1" class="badge">No motion</span>
+          </div>
+          <img src="assets/cam-cat.svg" alt="Fake animated camera feed showing a playful cat" />
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>CAM-02 · Hallway</h2>
+            <span id="motionCam2" class="badge">No motion</span>
+          </div>
+          <img src="assets/cam-hallway.svg" alt="Fake animated camera feed showing a hallway" />
+        </article>
+      </section>
+
+      <aside class="events panel">
+        <div class="panel-header">
+          <h2>Mock Events</h2>
+          <span class="badge active">Live</span>
+        </div>
+        <ul id="eventLog" aria-live="polite"></ul>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
