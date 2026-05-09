@@ -9,6 +9,8 @@ Diese Anleitung ist für Einsteiger gedacht: **forken, lokal testen, anpassen un
 2. Klicke auf **Fork**.
 3. Klone deinen Fork lokal:
 
+> Ersetze `<YOUR_USERNAME>` jeweils durch deinen echten GitHub-Benutzernamen.
+
 ```bash
 git clone https://github.com/<YOUR_USERNAME>/camera-surveillance-stack-demo.git
 cd camera-surveillance-stack-demo
