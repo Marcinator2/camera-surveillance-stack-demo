@@ -1,0 +1,45 @@
+@media (max-width: 900px) {
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+  }
+
+  .topbar-brand {
+    width: auto;
+    justify-content: space-between;
+  }
+
+  .system-status {
+    justify-content: center;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    width: calc(100% - 1rem);
+    margin-top: 0.5rem;
+    padding: 0.85rem 0.85rem;
+  }
+
+  .layout {
+    width: calc(100% - 1rem);
+    margin-top: 0.75rem;
+  }
+
+  .topbar-brand {
+    gap: 0.6rem;
+  }
+
+  .github-link {
+    padding: 0.35rem 0.65rem;
+  }
+
+  img {
+    height: 206px;
+  }
+}

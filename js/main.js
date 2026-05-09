@@ -1,33 +1,11 @@
+import { activityEvents } from './data/activity-events.js';
+import { setMotionBadge } from './ui/badges.js';
+import { nowTime } from './utils/time.js';
+
 const eventLog = document.getElementById('eventLog');
 const motionCam1 = document.getElementById('motionCam1');
 const motionCam2 = document.getElementById('motionCam2');
 const systemStatus = document.getElementById('systemStatus');
-
-const activityEvents = [
-  { camera: 'CAM-01', text: 'Motion detected near snack bowl.', type: 'motion' },
-  { camera: 'CAM-02', text: 'Suspicious sock crossing hallway.', type: 'motion' },
-  { camera: 'CAM-01', text: 'Cat detected: 98% confidence 🐈', type: 'alert' },
-  { camera: 'CAM-02', text: 'Robot vacuum patrol in progress.', type: 'motion' },
-  { camera: 'CAM-01', text: 'Cat detected: loaf mode activated.', type: 'alert' },
-  { camera: 'CAM-02', text: 'No threat found. Probably a shadow.', type: 'info' }
-];
-
-function nowTime() {
-  return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-}
-
-function setMotionBadge(el, type) {
-  el.className = 'badge';
-  if (type === 'motion') {
-    el.classList.add('motion');
-    el.textContent = 'Motion';
-  } else if (type === 'alert') {
-    el.classList.add('alert');
-    el.textContent = 'Cat alert';
-  } else {
-    el.textContent = 'No motion';
-  }
-}
 
 function pushEvent() {
   const event = activityEvents[Math.floor(Math.random() * activityEvents.length)];

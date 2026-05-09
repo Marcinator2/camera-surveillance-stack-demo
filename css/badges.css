@@ -1,0 +1,28 @@
+.badge {
+  border: 1px solid rgba(134, 159, 202, 0.33);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.24rem 0.58rem;
+  color: #d3dff8;
+  background: rgba(102, 133, 183, 0.1);
+}
+
+.badge.motion {
+  border-color: color-mix(in srgb, var(--warn), #fff 22%);
+  color: var(--warn);
+  background: color-mix(in srgb, var(--warn), transparent 83%);
+}
+
+.badge.alert {
+  border-color: color-mix(in srgb, var(--alert), #fff 20%);
+  color: var(--alert);
+  background: color-mix(in srgb, var(--alert), transparent 84%);
+}
+
+.badge.active {
+  border-color: color-mix(in srgb, var(--ok), #fff 20%);
+  color: var(--ok);
+  background: color-mix(in srgb, var(--ok), transparent 84%);
+}

@@ -72,20 +72,22 @@ Beispiel Video:
 
 Dateien, die du typischerweise anpasst:
 - `index.html` → neue Kamera-Kachel ergänzen
-- `app.js` → Motion-Badge-Logik für neue Kamera ergänzen
+- `js/main.js` → Event-Fluss / DOM-Integration
+- `js/data/activity-events.js` → Event-Datenliste erweitern
+- `js/ui/badges.js` → Badge-Darstellung für zusätzliche Kameras
 - `style.css` → optional Größen/Layout feinjustieren
 
 ### Schritte
 1. In `index.html` eine weitere `<article class="panel">...</article>` in `<section class="feeds">` hinzufügen.
 2. Ein neues Badge-Element mit eigener ID einbauen (z. B. `motionCam3`).
-3. In `app.js` per `document.getElementById('motionCam3')` referenzieren.
-4. In `pushEvent()` die Badge-Aktualisierung für CAM-03 ergänzen.
+3. In `js/main.js` per `document.getElementById('motionCam3')` referenzieren.
+4. In `js/main.js` die Badge-Aktualisierung für CAM-03 ergänzen.
 
 ---
 
 ## 4) Event-Mockup-Bereich erweitern
 
-Relevante Stelle: `app.js` → Array `activityEvents`.
+Relevante Stelle: `js/data/activity-events.js` → Array `activityEvents`.
 
 Du kannst dort zusätzliche Einträge ergänzen, z. B.:
 
@@ -105,14 +107,16 @@ Neue Events erscheinen automatisch im Bereich **Mock Events** (`#eventLog`).
 ## 5) Hinweise & Tipps für Anpassungen
 
 ### Farbtheme ändern
-In `style.css` unter `:root` die Variablen anpassen:
+In `css/tokens.css` unter `:root` die Variablen anpassen:
 - `--bg`, `--panel`, `--line`, `--text`
 - `--ok`, `--warn`, `--alert`
 
 ### Layout anpassen
-- Hauptlayout: `.layout`
-- Kamera-Grid: `.feeds`
-- Kachelstil: `.panel`
+- Einstiegspunkt: `style.css` (importiert alle CSS-Module)
+- Hauptlayout + Panels: `css/layout.css`
+- Header + Topbar: `css/header.css`
+- Badges: `css/badges.css`
+- Responsive Regeln: `css/responsive.css`
 
 ### Später echte Kamera-Streams
 Wenn du von Demo-Medien auf echte Streams wechselst:
@@ -146,6 +150,7 @@ Die konkrete Live-URL siehst du immer zusätzlich in **Settings → Pages** nach
 - Bestehendes Demo-Verhalten beim Erweitern nicht kaputt machen.
 - Lesbare, konsistente Dateinamen und Struktur beibehalten.
 - Für Assets immer relative Pfade verwenden (lokal + GitHub Pages).
+- Harte Vorgabe: **eine Datei darf maximal 800 Zeilen haben**. Bei Bedarf frühzeitig in sinnvolle Module/Dateien aufteilen.
 
 ### Erwartung an Pull Requests
 
