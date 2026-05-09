@@ -36,8 +36,31 @@ body {
   font-size: 1.2rem;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
 .system-status {
   font-weight: 600;
+}
+
+.github-link {
+  color: #cdd8ef;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.8rem;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.github-link:hover,
+.github-link:focus-visible {
+  color: #ffffff;
+  border-color: #5e8fff;
+  background: rgba(94, 143, 255, 0.14);
 }
 
 .ok {
@@ -139,6 +162,16 @@ img {
 }
 
 @media (max-width: 900px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .layout {
     grid-template-columns: 1fr;
   }
