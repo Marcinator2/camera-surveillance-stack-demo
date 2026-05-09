@@ -136,3 +136,19 @@ Typische URL danach:
 `https://<YOUR_USERNAME>.github.io/camera-surveillance-stack-demo/`
 
 Die konkrete Live-URL siehst du immer zusätzlich in **Settings → Pages** nach dem ersten erfolgreichen Deploy.
+
+---
+
+## 7) Projekt-Regeln für Beiträge (für alle Contributors)
+
+- Änderungen klein, fokussiert und gut reviewbar halten.
+- Möglichst einfache, dependency-freie Lösungen bevorzugen.
+- Bestehendes Demo-Verhalten beim Erweitern nicht kaputt machen.
+- Lesbare, konsistente Dateinamen und Struktur beibehalten.
+- Für Assets immer relative Pfade verwenden (lokal + GitHub Pages).
+
+### Erwartung an Pull Requests
+
+1. Kurz erklären, **was** geändert wurde und **warum**.
+2. Keine unnötigen Neben-Refactorings in Content/Feature-PRs.
+3. Vor dem Einreichen lokal prüfen, ob die Demo funktioniert.

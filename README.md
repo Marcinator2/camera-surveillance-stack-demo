@@ -2,6 +2,12 @@
 
 A standalone static GitHub Pages demo for a playful surveillance dashboard mockup.
 
+## ⚠️ Important for contributors (including Copilot)
+
+Before making any change, read and follow [`instructions.md`](./instructions.md).
+
+All pull requests and code/content updates in this repository are expected to follow the guidelines and best practices documented there.
+
 ## What is included
 
 - simple dashboard UI
@@ -25,3 +31,10 @@ Open `index.html` directly in your browser, or serve the folder with any static 
 After deployment finishes, the site will be available at:
 
 `https://marcinator2.github.io/camera-surveillance-stack-demo/`
+
+## How to contribute
+
+1. Read [`instructions.md`](./instructions.md) first.
+2. Follow the best practices from [`instructions.md`](./instructions.md) for implementation and extensions.
+3. Ensure your pull request description and changes align with those project guidelines.
+4. Optionally review [`CONTRIBUTING.md`](./CONTRIBUTING.md) for a short contribution checklist.
