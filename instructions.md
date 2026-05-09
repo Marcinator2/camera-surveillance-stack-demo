@@ -10,7 +10,7 @@ Diese Anleitung ist für Einsteiger gedacht: **forken, lokal testen, anpassen un
 3. Klone deinen Fork lokal:
 
 ```bash
-git clone https://github.com/<dein-user>/camera-surveillance-stack-demo.git
+git clone https://github.com/<YOUR_USERNAME>/camera-surveillance-stack-demo.git
 cd camera-surveillance-stack-demo
 ```
 
@@ -131,7 +131,7 @@ Wenn du von Demo-Medien auf echte Streams wechselst:
 
 Typische URL danach:
 
-`https://<dein-user>.github.io/camera-surveillance-stack-demo/`
+`https://<YOUR_USERNAME>.github.io/camera-surveillance-stack-demo/`
 
 Für dieses Projekt konkret (wenn es im Account `marcinator2` liegt):
 
