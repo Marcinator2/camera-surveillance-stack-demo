@@ -133,6 +133,4 @@ Typische URL danach:
 
 `https://<YOUR_USERNAME>.github.io/camera-surveillance-stack-demo/`
 
-Für dieses Projekt konkret (wenn es im Account `marcinator2` liegt):
-
-`https://marcinator2.github.io/camera-surveillance-stack-demo/`
+Die konkrete Live-URL siehst du immer zusätzlich in **Settings → Pages** nach dem ersten erfolgreichen Deploy.
