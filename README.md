@@ -37,4 +37,4 @@ After deployment finishes, the site will be available at:
 1. Read [`instructions.md`](./instructions.md) first.
 2. Follow the best practices from [`instructions.md`](./instructions.md) for implementation and extensions.
 3. Ensure your pull request description and changes align with those project guidelines.
-4. Optionally review [`CONTRIBUTING.md`](./CONTRIBUTING.md) for a short contribution checklist.
+4. You can also review [`CONTRIBUTING.md`](./CONTRIBUTING.md) as a short checklist companion to the detailed guidance in `instructions.md`.
